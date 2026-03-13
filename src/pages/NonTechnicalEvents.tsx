@@ -154,16 +154,17 @@ const NonTechnicalEvents = () => {
             </div>
           </div>
 
+         
           {/* E-Sports */}
           <div className="card-event rounded-xl p-8 md:p-12 mb-12">
             <span className="font-display text-[11px] font-bold uppercase tracking-wide px-4 py-2 rounded-full inline-block mb-4" style={{ background: "hsla(187, 100%, 50%, 0.2)", color: "hsl(187, 100%, 50%)" }}>Non-Technical</span>
             <h2 className="font-display text-3xl md:text-4xl font-black mb-2 text-gradient-section">E-SPORTS</h2>
             <p className="text-secondary font-display text-sm mb-8 tracking-wide">Game On. Compete. Conquer.</p>
 
-            <div className="grid grid-cols-2 gap-4 mb-10">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
               {[
-                { label: "Mode", value: "On-Campus" },
-                { label: "Type", value: "Team / Individual" },
+                { label: "Participation", value: "Individual / Squad" },
+                { label: "Mode", value: "Online / On-Campus" },
               ].map((d) => (
                 <div key={d.label} className="info-box-style rounded-lg p-4 text-center">
                   <p className="text-secondary font-display text-[10px] uppercase tracking-wide mb-1">{d.label}</p>
@@ -172,7 +173,47 @@ const NonTechnicalEvents = () => {
               ))}
             </div>
 
-            <p className="text-muted-foreground text-sm mb-6">Compete in your favorite gaming titles. Show off your gaming prowess and claim victory! More details will be announced on the day of the event.</p>
+            <h3 className="font-display text-lg font-bold text-secondary mb-4">📋 Event Schedule</h3>
+            <div className="overflow-x-auto mb-10">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-secondary/30">
+                    <th className="text-left py-3 px-4 text-secondary font-display text-xs uppercase">Time</th>
+                    <th className="text-left py-3 px-4 text-secondary font-display text-xs uppercase">Activity</th>
+                  </tr>
+                </thead>
+                <tbody className="text-foreground">
+                  {[
+                    ["10:00 – 10:30 AM", "Round One (Knockout Match)"],
+                    ["10:30 – 11:00 AM", "Round Two (Knockout Match)"],
+                    ["11:00 – 11:30 AM", "Final Round"],
+                    ["03:00 – 04:00 PM", "Prize Distribution"],
+                  ].map(([time, activity]) => (
+                    <tr key={time} className="border-b border-muted/30 hover:bg-muted/10 transition-colors">
+                      <td className="py-3 px-4 text-accent font-medium whitespace-nowrap">{time}</td>
+                      <td className="py-3 px-4">{activity}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <h3 className="font-display text-lg font-bold text-secondary mb-4">📜 Game Rules</h3>
+            <ul className="space-y-2 text-muted-foreground text-sm mb-10 list-disc list-inside">
+              <li>All participants must have a valid Free Fire or PUBG account.</li>
+              <li>Players must join using the ID and password shared by organizers.</li>
+              <li>Match will be conducted online through mobile devices.</li>
+              <li>Players must report 10 minutes before the scheduled time.</li>
+              <li>Any cheating or hacking leads to disqualification.</li>
+              <li>Participants must ensure stable internet connection.</li>
+            </ul>
+
+            <h3 className="font-display text-lg font-bold text-secondary mb-4">📞 Coordinators</h3>
+            <div className="info-box-style rounded-lg p-4">
+              <p className="text-foreground text-sm font-semibold">Akash</p>
+              <a href="tel:+919600473036" className="text-secondary hover:text-primary text-sm transition-colors">+91 9600473036</a>
+              <p className="text-muted-foreground text-sm mt-1">Co-Coordinator: Aravind (+91 8778243172)</p>
+            </div>
           </div>
 
           {/* Fun Sports */}
