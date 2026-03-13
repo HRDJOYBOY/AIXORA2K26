@@ -58,25 +58,25 @@ const Index = () => {
   return (
     <div className="relative z-10">
       {/* Header */}
-<header className="sticky top-0 z-50 backdrop-blur-xl border-b-2 border-secondary/30" style={{ background: "rgba(10, 10, 26, 0.8)", boxShadow: "0 8px 32px hsla(187, 100%, 50%, 0.15)" }}>
-  <div className="container mx-auto px-5 py-5 flex justify-between items-center">
-    <div className="flex items-center gap-3">
-      <img
-        src="/AIXORA'26 FINAL LOGO.png"
-        alt="AIXORA'26 Logo"
-        className="h-10 w-10 object-contain"
-      />
-      <div className="font-display text-2xl md:text-3xl font-black tracking-wider text-gradient-section">AIXORA'26</div>
-    </div>
-    <nav className="flex gap-5 md:gap-10">
-      {["events", "registration", "details", "contact"].map((s) => (
-        <button key={s} onClick={() => scrollTo(s)} className="text-foreground text-xs md:text-sm font-medium uppercase tracking-widest hover:text-primary transition-colors">
-          {s}
-        </button>
-      ))}
-    </nav>
-  </div>
-</header>
+      <header className="sticky top-0 z-50 backdrop-blur-xl border-b-2 border-secondary/30" style={{ background: "rgba(10, 10, 26, 0.8)", boxShadow: "0 8px 32px hsla(187, 100%, 50%, 0.15)" }}>
+        <div className="container mx-auto px-5 py-5 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex items-center gap-3">
+            <img
+              src="/AIXORA'26 FINAL LOGO.png"
+              alt="AIXORA'26 Logo"
+              className="h-10 w-10 object-contain"
+            />
+            <div className="font-display text-2xl md:text-3xl font-black tracking-wider text-gradient-section">AIXORA'26</div>
+          </div>
+          <nav className="flex flex-wrap justify-center gap-3 md:gap-10">
+            {["events", "registration", "details", "contact"].map((s) => (
+              <button key={s} onClick={() => scrollTo(s)} className="text-foreground text-xs md:text-sm font-medium uppercase tracking-widest hover:text-primary transition-colors">
+                {s}
+              </button>
+            ))}
+          </nav>
+        </div>
+      </header>
 
       {/* Hero */}
       <section className="min-h-screen flex items-center justify-center text-center px-5 py-20 relative overflow-hidden">
@@ -172,12 +172,12 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="font-display text-3xl md:text-5xl font-black mb-16 text-center tracking-wider text-gradient-section">Event Details</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
-            {[
+            {([
               { icon: "📍", title: "Location", text: "Aero Seminar Hall\nAdhiyamaan College of Engineering\nDr. M.G.R. Nagar, Hosur-635130" },
               { icon: "📅", title: "Dates", text: "26th & 27th March 2026\nA Two-Day Event" },
               { icon: "💰", title: "Registration Fee", text: "₹250 per participant\nIncludes food, events access, and prizes" },
               { icon: "🎁", title: "Prizes & Rewards", text: "Shields + Certificates for winners and runners in all events" },
-            ].map((item) => (
+            ]).map((item) => (
               <div key={item.title} className="info-box-style rounded-lg p-5">
                 <h4 className="text-secondary font-display text-xs uppercase tracking-wide mb-3">{item.icon} {item.title}</h4>
                 <p className="text-foreground text-sm whitespace-pre-line">{item.text}</p>
