@@ -92,10 +92,14 @@ const TechnicalEvents = () => {
               <div className="info-box-style rounded-lg p-4">
                 <p className="text-foreground text-sm font-semibold">Afnan Saif M S</p>
                 <a href="tel:+919042855211" className="text-secondary hover:text-primary text-sm transition-colors">+91 9042855211</a>
+                
               </div>
               <div className="info-box-style rounded-lg p-4">
                 <p className="text-foreground text-sm font-semibold">Dheep Hirthick S (Co-Coordinator)</p>
                 <a href="tel:+918610050931" className="text-secondary hover:text-primary text-sm transition-colors">+91 8610050931</a>
+                <p className="text-foreground text-sm font-semibold">NADHIYA S (TEAM)</p>
+                <p className="text-foreground text-sm font-semibold">AMULYA A (TEAM)</p>
+                <p className="text-foreground text-sm font-semibold">BHAVYA (TEAM)</p>
               </div>
             </div>
           </div>

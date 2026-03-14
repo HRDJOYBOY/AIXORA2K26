@@ -150,6 +150,7 @@ const NonTechnicalEvents = () => {
             <h3 className="font-display text-lg font-bold text-secondary mb-4">📞 Coordinators</h3>
             <div className="info-box-style rounded-lg p-4">
               <p className="text-foreground text-sm font-semibold">Lakshaki MJ – III Year</p>
+              <a href="tel:+918220985839" className="text-secondary hover:text-primary text-sm transition-colors">+91 8220985839</a>
               <p className="text-muted-foreground text-sm mt-1">Team: Kishore V (III Year), Swetha (II Year)</p>
             </div>
           </div>
