@@ -84,7 +84,7 @@ const Index = () => {
         <div className="relative z-10 animate-slide-up">
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black mb-5 tracking-wider text-gradient-hero leading-tight">AIXORA'26</h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-4 font-light tracking-wide">A Two-Day National Level Technical Symposium</p>
-          <div className="font-display text-base md:text-lg text-secondary mb-12 uppercase tracking-widest">📅 26th & 27th March 2026</div>
+          <div className="font-display text-base md:text-lg text-secondary mb-12 uppercase tracking-widest">📅 01th & 02th March 2026</div>
           <div className="flex gap-5 justify-center flex-wrap mb-10">
             <a href={REGISTRATION_URL} target="_blank" rel="noopener noreferrer" className="btn-cta-primary px-10 py-4 rounded-lg text-sm font-bold uppercase tracking-wide inline-block">Register Now</a>
             <button onClick={() => scrollTo("events")} className="btn-cta-secondary px-10 py-4 rounded-lg text-sm font-bold uppercase tracking-wide">Explore Events</button>

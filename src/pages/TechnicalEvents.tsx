@@ -33,6 +33,7 @@ const TechnicalEvents = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
               {[
+                { label: "Date", value: "01.04.2026" },
                 { label: "Duration", value: "6 Hours" },
                 { label: "Team Size", value: "2–4 Members" },
                 { label: "Mode", value: "Offline / On-Campus" },
@@ -112,7 +113,7 @@ const TechnicalEvents = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
               {[
-                { label: "Date", value: "26.03.2026" },
+                { label: "Date", value: "01.04.2026" },
                 { label: "Team Size", value: "2–4 Members" },
                 { label: "Mode", value: "Offline / On-Campus" },
                 { label: "Theme", value: "Open Innovation" },
@@ -246,7 +247,7 @@ const TechnicalEvents = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
               {[
-                { label: "Date", value: "26.03.2026" },
+                { label: "Date", value: "01.05.2026" },
                 { label: "Mode", value: "Offline / On-Campus" },
                 { label: "Type", value: "Individual" },
               ].map((d) => (
