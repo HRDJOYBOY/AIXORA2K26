@@ -247,7 +247,7 @@ const TechnicalEvents = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
               {[
-                { label: "Date", value: "01.05.2026" },
+                { label: "Date", value: "01.04.2026" },
                 { label: "Mode", value: "Offline / On-Campus" },
                 { label: "Type", value: "Individual" },
               ].map((d) => (
