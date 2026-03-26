@@ -98,7 +98,7 @@ const NonTechnicalEvents = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
               {[
-                { label: "Date", value: "02.04.2026" },
+                { label: "Date", value: "11.04.2026" },
                 { label: "Team Size", value: "1–2 Members" },
                 { label: "Mode", value: "Offline / On-Campus" },
               ].map((d) => (

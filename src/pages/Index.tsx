@@ -82,9 +82,18 @@ const Index = () => {
       <section className="min-h-screen flex items-center justify-center text-center px-5 py-20 relative overflow-hidden">
         <div className="absolute w-[500px] h-[500px] rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0" style={{ background: "radial-gradient(circle, hsla(187, 100%, 50%, 0.2) 0%, transparent 70%)", animation: "pulse-glow 4s ease-in-out infinite" }} />
         <div className="relative z-10 animate-slide-up">
+        {/* Prize Pool Banner */}
+          <div className="mb-8 inline-block relative">
+            <div className="absolute inset-0 rounded-2xl blur-2xl opacity-40" style={{ background: "linear-gradient(135deg, hsl(42 100% 50%), hsl(335 100% 43%), hsl(187 100% 50%))" }} />
+            <div className="relative rounded-2xl px-8 py-4 md:px-14 md:py-6 border-2 border-accent/40" style={{ background: "hsla(240, 43%, 14%, 0.7)", boxShadow: "0 0 40px hsla(42, 100%, 50%, 0.2), inset 0 0 30px hsla(42, 100%, 50%, 0.05)" }}>
+              <p className="font-display text-[10px] md:text-xs uppercase tracking-[0.3em] text-accent mb-1">🏆 Total Prize Pool 🏆</p>
+              <p className="font-display text-4xl md:text-6xl font-black text-gradient-hero leading-none">₹3,00,000</p>
+              <p className="font-display text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground mt-2">Worth of Prizes</p>
+            </div>
+          </div>  
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black mb-5 tracking-wider text-gradient-hero leading-tight">AIXORA'26</h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-4 font-light tracking-wide">A Two-Day National Level Technical Symposium</p>
-          <div className="font-display text-base md:text-lg text-secondary mb-12 uppercase tracking-widest">📅 01th & 02th APRIL 2026</div>
+          <div className="font-display text-base md:text-lg text-secondary mb-12 uppercase tracking-widest">📅 10th & 11th April 2026</div>
           <div className="flex gap-5 justify-center flex-wrap mb-10">
             <a href={REGISTRATION_URL} target="_blank" rel="noopener noreferrer" className="btn-cta-primary px-10 py-4 rounded-lg text-sm font-bold uppercase tracking-wide inline-block">Register Now</a>
             <button onClick={() => scrollTo("events")} className="btn-cta-secondary px-10 py-4 rounded-lg text-sm font-bold uppercase tracking-wide">Explore Events</button>
