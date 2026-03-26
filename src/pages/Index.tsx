@@ -174,7 +174,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
             {([
               { icon: "📍", title: "Location", text: "Aero Seminar Hall\nAdhiyamaan College of Engineering\nDr. M.G.R. Nagar, Hosur-635130" },
-              { icon: "📅", title: "Dates", text: "26th & 27th March 2026\nA Two-Day Event" },
+              { icon: "📅", title: "Dates", text: "10th & 11th APRIL 2026\nA Two-Day Event" },
               { icon: "💰", title: "Registration Fee", text: "₹250 per participant\nIncludes food, events access, and prizes" },
               { icon: "🎁", title: "Prizes & Rewards", text: "Shields + Certificates for winners and runners in all events" },
             ]).map((item) => (
