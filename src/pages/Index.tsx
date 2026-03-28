@@ -93,7 +93,7 @@ const Index = () => {
           </div>  
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black mb-5 tracking-wider text-gradient-hero leading-tight">AIXORA'26</h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-4 font-light tracking-wide">A Two-Day National Level Technical Symposium</p>
-          <div className="font-display text-base md:text-lg text-secondary mb-12 uppercase tracking-widest">📅 10th & 11th April 2026</div>
+          <div className="font-display text-base md:text-lg text-secondary mb-12 uppercase tracking-widest">📅 07th & 08th April 2026</div>
           <div className="flex gap-5 justify-center flex-wrap mb-10">
             <a href={REGISTRATION_URL} target="_blank" rel="noopener noreferrer" className="btn-cta-primary px-10 py-4 rounded-lg text-sm font-bold uppercase tracking-wide inline-block">Register Now</a>
             <button onClick={() => scrollTo("events")} className="btn-cta-secondary px-10 py-4 rounded-lg text-sm font-bold uppercase tracking-wide">Explore Events</button>
@@ -183,7 +183,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
             {([
               { icon: "📍", title: "Location", text: "Aero Seminar Hall\nAdhiyamaan College of Engineering\nDr. M.G.R. Nagar, Hosur-635130" },
-              { icon: "📅", title: "Dates", text: "10th & 11th APRIL 2026\nA Two-Day Event" },
+              { icon: "📅", title: "Dates", text: "07th & 08th APRIL 2026\nA Two-Day Event" },
               { icon: "💰", title: "Registration Fee", text: "₹250 per participant\nIncludes food, events access, and prizes" },
               { icon: "🎁", title: "Prizes & Rewards", text: "Shields + Certificates for winners and runners in all events" },
             ]).map((item) => (
