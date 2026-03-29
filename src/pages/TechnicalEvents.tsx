@@ -270,10 +270,11 @@ const TechnicalEvents = () => {
                 <tbody className="text-foreground">
                   {[
                     ["09:45 – 10:00 AM", "Participant Registration"],
-                    ["10:00 – 10:05 AM", "Round 1 – MCQ"],
-                    ["10:05 – 11:40 AM", "Round 2 – Technical Round"],
-                    ["11:40 – 11:55 AM", "Round 3 – Rapid Fire / Final"],
-                    ["11:55 – 12:00 PM", "Result Announcement"],
+                    ["10:00 – 10:20 AM", "Round 1 – MCQ"],
+                    ["10:20 – 11:20 AM", "Round 2 – Technical Round"],
+                    ["11:20 – 11:40 AM", "Break /Evaluation"],
+                    ["11:40 – 12:00 AM", "Round 3 – Rapid Fire / Final"],
+                    ["12:00 – 12:100 PM", "Result Announcement"],
                   ].map(([time, activity]) => (
                     <tr key={time} className="border-b border-muted/30 hover:bg-muted/10 transition-colors">
                       <td className="py-3 px-4 text-accent font-medium whitespace-nowrap">{time}</td>
